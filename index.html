@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZETTA Informática</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary fs-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href=""><img src="imagenes/zettaBlack.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#servicios">SERVICIOS</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#nosotros">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#proyectos">PROYECTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contacto">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>      
+    <div class="home">
+        <h1>La solución simple a todas<br>tus necesidades informáticas.</h1>
+        <img class="banner-home" src="imagenes/zettaInfBlack.png" alt="logo inicio">
+    </div>
+    <section class="services" id="servicios"> 
+        <div class="servicio">
+            <h2>Instalación de programas.</h2>
+            <p>Instalamos cualquier programa que necesites. Editores de texto, estaciones de trabajo de audio digital, videojuegos... Todo.</p> 
+            <img src="imagenes/instalacionprogramas.jpeg">
+        </div>
+        <div class="servicio-reverse">
+            <h2>Limpieza de software malicioso.</h2>
+            <p>Despedite de virus, troyanos, adware, malware y cualquier tipo de molestia en tus dispositivos.</p> 
+            <img src="imagenes/limpiezamalware.jpeg">
+        </div> 
+        <div class="servicio">
+            <h2>Arreglos y armado de hardware.</h2>
+            <p>Vos elegís los componentes. Nosotros nos encargamos del resto.</p> 
+            <img src="imagenes/armadopc.jpeg">
+        </div>
+    </section>
+
+    <section class="staff" id="nosotros">
+        <h2 class="title">Nos apasiona la tecnología. Nos apasiona ayudar.</h2>
+        <p>ZETTA Informática está conformado por cinco amigos unidos por nuestra afición a la tecnología. Debido a la cada vez más alta adopción de dispositivos informáticos, decidimos organizarnos para facilitar a cualquier persona el acceso al mundo digital.</p>
+        <div class="staff-members">
+            <div class="staff-member">
+                <img src="imagenes/stock1.webp" alt="">
+                <p>Juan</p>
+            </div>
+            <div class="staff-member">
+                <img src="imagenes/stock2.jpeg" alt="">
+                <p>Jorge</p>
+            </div>
+            <div class="staff-member">
+                <img src="imagenes/stock3.jpeg" alt="">
+                <p>Jeremias</p>
+            </div>
+            <div class="staff-member">
+                <img src="imagenes/stock4.jpg" alt="">
+                <p>Jerónimo</p>
+            </div>
+            <div class="staff-member">
+                <img src="imagenes/stock5.jpg" alt="">
+                <p>José</p>
+            </div>
+        </div>
+    </section>
+
+    <article class="projects" id="proyectos">
+        <h2 class="title">Nuestros proyectos.</h2>
+        
+        <section class="section">
+            <h3>Computadoras armadas</h3>
+            <div class="image-grid">
+                <img src="/imagenes/armada1.webp" alt="Armada 1">
+                <img src="/imagenes/armada2.webp" alt="Armada 2">
+                <img src="/imagenes/armada3.webp" alt="Armada 3">
+                <img src="/imagenes/armada4.webp" alt="Armada 4">
+                <img src="/imagenes/armada5.webp" alt="Armada 5">
+                <img src="/imagenes/armada6.webp" alt="Armada 5">
+            </div>
+        </section>
+
+        <section class="section">
+            <h3>INSTALACIONES DE SOFTWARE</h3>
+            <div class="image-grid">
+                <img src="/imagenes/soft1.jpeg" alt="Instalación 1">
+                <img src="/imagenes/sof2.webp" alt="Instalación 2">
+                <img src="/imagenes/soft3.png" alt="Instalación 3">
+                
+            </div>
+        </section>
+    </article>
+
+    <article class="contact" id="contacto">
+        <div class="contact-us">
+        <h2 class="title">Contactanos.</h2>
+        <form action="php.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="idea">Dejanos tu consulta:</label>
+            <textarea id="idea" name="idea" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+        
+    </article>
+
+    <footer id="contacto">
+        <div class="social-media">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=NUMERO_DE_TELEFONO" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
