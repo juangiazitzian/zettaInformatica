@@ -1,0 +1,90 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    background-color: #586994;
+    padding: 5rem 0 5rem 0;
+
+    h1{
+        font-size: 4rem;
+    }
+
+    h2 {
+        margin: 1rem;
+        padding: 0;
+        font-size: 3rem;
+    }
+
+    p {
+        margin: 0 4rem 0 4rem;
+        font-size: 2rem;
+        width: auto;
+    }
+}
+
+.servicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img{
+        max-width: 80%;
+        width: 20rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.servicio-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    img{
+        max-width: 80%;
+        width: 20rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        text-align: center;
+    }
+
+    .text-overlay {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+    }
+
+    .services {
+        padding: 5rem 0;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+            margin: 0 2rem;
+        }
+    }
+
+    .servicio{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .servicio-reverse{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+}
